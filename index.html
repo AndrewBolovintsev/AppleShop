@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>iTech</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <img src="apple.png" alt="apple" width="30" height="30">
+                <ul>
+                    <li><a href="#popup2" class="popup-link">Cart</a></li>
+                    <li><a href="#popup3" class="popup-link">Add item</a></li>
+                    <li><a href="#popup1" class="popup-link">Sing In</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="catalogue">
+            <div class="Product">
+                <div class="card">
+                    <div class="card-item">
+                        <img class="photo" src="macbook.png" alt="Product laptop" height="350">
+                    </div>
+                </div><br /><br />
+                <span class="name"> Apple MacBook Pro 16 </span>
+                <span class="price">3000$</span>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="Product">
+                <div class="card">
+                    <div class="card-item">
+                        <br /><img class="photo" src="iphone1.png" alt="Product laptop" height="350">
+                    </div>
+                </div><br /><br />
+                <span class="name"> Apple iPhone 14 Pro Max </span>
+                <span class="price">1500$</span>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="Product">
+                <div class="card">
+                    <div class="card-item">
+                        <br /><img class="photo" src="imac1.png" alt="Product laptop" height="350">
+                    </div>
+                </div><br /><br />
+                <span class="name"> Apple iMac </span>
+                <span class="price">3500$</span>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="Product">
+                <div class="card">
+                    <div class="card-item">
+                        <br /><img class="photo" src="watch.png" alt="Product Tablet" height="350">
+                    </div>
+                </div><br /><br />
+                <span class="name"> Apple Watch Series 4 </span>
+                <span class="price">500$</span>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="Product">
+                <div class="card">
+                    <div class="card-item">
+                        <br /><img class="photo" src="ipad1.png" alt="Product Tablet" width="620"
+                            height="350">
+                    </div>
+                </div><br /><br />
+                <span class="name"> Apple Ipad Pro </span>
+                <span class="price">1000$</span>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+        <div class="popup" id="popup1">
+            <div class="popup-body">
+                <div class="popup-container dws-form">
+                    <label class="tab1 active1" title="Authorization page">Authorization</label>
+                    <label class="tab2" title="Registration page">Registration</label>
+                    <a href="" class="popup-close close-popup">X</a>
+                    <form class="tab-form1 active">
+                        <input class="input" type="email" placeholder="Input E-mail">
+                        <input class="input" type="password" placeholder="Input password">
+                        <a href="#" class="enter-button">Sing in</a>
+                    </form>
+                    <form class="tab-form2">
+                        <input class="input" type="email" placeholder="Input E-mail">
+                        <input class="input" type="text" placeholder="Input your name">
+                        <input class="input" type="password" placeholder="Input password">
+                        <a href="#" class="enter-button">Sing up</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup2">
+            <div class="popup-body">
+                <div class="popup-container cart">
+                    <h2>Cart</h2>
+                    <div class="items"></div>
+                    <button class="buy-button popup-close">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup3">
+            <div class="popup-body">
+                <div class="popup-container add-item">
+                    <h2>Add item</h2>
+                    <form class="product-specs" name="productSpecs">
+                        <input class="input name" name="name" type="text" placeholder="Name">
+                        <input class="input price" name="price" type="number" placeholder="Cost">
+                        <select class="input">
+                            <option disabled>Choose currency</option>
+                            <option>USD</option>
+                            <option>BYN</option>
+                            <option>RUB</option>
+                        </select>
+                        <input class="input photo" name="photo" type="text" placeholder="Photo">
+                        <br>
+                        <a href="#" class="enter-button add-item-button popup-close">Add item</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+       </html>
